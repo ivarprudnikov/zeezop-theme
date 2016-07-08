@@ -1,0 +1,19 @@
+<ul class="site-nav" id="accessibleNav">
+  {% unless linklists.main-menu.links.first.url == '/' %}
+  <li class="large--hide">
+    <a href="/">{{ 'general.breadcrumbs.home' | t }}</a>
+  </li>
+  {% endunless %}
+  
+  <li class=" {% if collection.handle == 'all' %}active{% endif %} "><a href="/collections/all">All products</a></li>
+
+	{% for coll in collections %}
+    {% unless coll.handle == 'frontpage' or coll.handle == 'all' %}
+      <li class=" {% if collection.handle == coll.handle %}active{% endif %} ">
+
+        <a href="{{ coll.url }}" title="{{ coll.title }}">{{ coll.title }}</a>
+
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
