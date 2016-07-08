@@ -7,13 +7,8 @@
 .project
 .elasticbeanstalk/
 dist/
-_mergedAppWithConfig/
-_merged/
 node_modules/
 bower_components/
-dev/*/styles/core.css
-docs/
-dev/_generated/
 *css.map
-dev/_shared/images/svg_*
 __*
+config.yml
