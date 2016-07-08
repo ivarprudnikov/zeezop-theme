@@ -36,7 +36,7 @@ timber.cacheSelectors = function () {
 
     // Collection Pages
     $collectionFilters: $('#collectionFilters'),
-    $advancedFilters: $('.advanced-filters'), 
+    $advancedFilters: $('.advanced-filters'),
     $toggleFilterBtn: $('#toggleFilters'),
 
     // Equal height elements
@@ -81,7 +81,7 @@ timber.init = function () {
   {% if settings.social_sharing_products or settings.social_sharing_blog %}
   timber.socialSharing();
   {% endif %}
-  
+
   {% if settings.collection_sidebar_filters == 'groups' %}
   timber.sortFilters();
   {% endif %}
@@ -284,7 +284,7 @@ timber.productImageSwitch = function () {
   if ( timber.cache.$thumbImages.length ) {
     // Switch the main image with one of the thumbnails
     // Note: this does not change the variant selected, just the image
-    timber.cache.$thumbImages.on('click', function(evt) {
+    timber.cache.$thumbImages.on('click mouseenter mouseleave', function(evt) {
       evt.preventDefault();
       var newImage = $(this).attr('href');
       timber.switchImage(newImage, null, timber.cache.$productImage);
@@ -418,7 +418,7 @@ timber.equalHeights = function () {
 timber.responsiveVideos = function () {
   $('iframe[src*="youtube.com/embed"]').wrap('<div class="video-wrapper"></div>');
   $('iframe[src*="player.vimeo"]').wrap('<div class="video-wrapper"></div>');
-  
+
   // Re-set the src attribute on each iframe after page load
   // for Chrome's "incorrect iFrame content on 'back'" bug.
   // https://code.google.com/p/chromium/issues/detail?id=395791
