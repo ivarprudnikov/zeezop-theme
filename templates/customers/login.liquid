@@ -13,23 +13,22 @@
       {% include 'form-errors-custom' %}
 
       <label for="customer_email" class="hidden-label">{{ 'customer.login.email' | t }}</label>
-      <input type="email" value="" name="customer[email]" id="customer_email" placeholder="{{ 'customer.login.email' | t }}" {% if form.errors contains "email" %} class="error"{% endif %} autocorrect="off" autocapitalize="off" autofocus>
+      <input type="email" required="required" value="" name="customer[email]" id="customer_email" placeholder="{{ 'customer.login.email' | t }}" {% if form.errors contains "email" %} class="error"{% endif %} autocorrect="off" autocapitalize="off" autofocus>
 
       {% if form.password_needed %}
 
         <label for="customer_password" class="hidden-label">{{ 'customer.login.password' | t }}</label>
-        <input type="password" value="" name="customer[password]" id="customer_password" placeholder="{{ 'customer.login.password' | t }}" {% if form.errors contains "password" %} class="error"{% endif %}>
+        <input type="password" required="required" value="" name="customer[password]" id="customer_password" placeholder="{{ 'customer.login.password' | t }}" {% if form.errors contains "password" %} class="error"{% endif %}>
 
-        <p>
+        <p class="input-hint">
           <a href="#" onclick="showRecoverPasswordForm();return false;">{{ 'customer.login.forgot_password' | t }}</a>
         </p>
 
       {% endif %}
 
-        <p>
-          <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
+        <p class="form-actions">
+          <input type="submit" class="btn btn--full" value="{{ 'customer.login.sign_in' | t }}">
         </p>
-        {{ 'customer.login.or' | t }} <a href="{{ shop.url }}">{{ 'customer.login.cancel' | t }}</a>
 
     {% endform %}
 
@@ -51,13 +50,13 @@
         {% endif %}
 
         <label for="recover-email" class="hidden-label">{{ 'customer.recover_password.email' | t }}</label>
-        <input type="email" value="" name="email" id="recover-email" placeholder="{{ 'customer.recover_password.email' | t }}" autocorrect="off" autocapitalize="off">
+        <input type="email" required="required" value="" name="email" id="recover-email" placeholder="{{ 'customer.recover_password.email' | t }}" autocorrect="off" autocapitalize="off">
 
-        <p>
-          <input type="submit" class="btn" value="{{ 'customer.recover_password.submit' | t }}">
+        <p class="form-actions">
+	        <input type="submit" class="btn" value="{{ 'customer.recover_password.submit' | t }}">
+	        <a href="#" class="btn btn-secondary" onclick="hideRecoverPasswordForm();return false;">{{ 'customer.recover_password.cancel' | t }}</a>
         </p>
-        {{ 'customer.login.or' | t }} <a href="#" onclick="hideRecoverPasswordForm();return false;">{{ 'customer.recover_password.cancel' | t }}</a>
-        
+
       {% endform %}
 
     </div>
@@ -68,9 +67,9 @@
       <h2>{{ 'customer.login.guest_title' | t }}</h2>
 
       {% form 'guest_login' %}
-        <input  type="submit" class="btn" value="{{ 'customer.login.guest_continue' | t }}">
+        <input  type="submit" class="btn btn--full" value="{{ 'customer.login.guest_continue' | t }}">
       {% endform %}
-      
+
     {% endif %}
 
   </div>

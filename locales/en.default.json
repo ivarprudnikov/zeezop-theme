@@ -23,7 +23,7 @@
       "signup_form_email_placeholder": "Your email",
       "signup_form_submit": "Submit",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
+      "admin_link_html": "<a href=\"\/admin\" class=\"text-link\">Are you the store owner? Sign In<\/a>",
       "password_link": "Enter using password",
       "close": "Close"
     },
@@ -170,7 +170,7 @@
       "delete_confirm": "Are you sure you wish to delete this address?"
     },
     "login": {
-      "title": "Login",
+      "title": "Sign In",
       "email": "Email",
       "password": "Password",
       "forgot_password": "Forgot your password?",
@@ -258,9 +258,9 @@
     },
     "customer": {
       "view_account": "View Account",
-      "logged_in_as_html": "Logged in as {{ first_name }}",
-      "log_out": "Log out",
-      "sign_in": "Sign in",
+      "logged_in_as_html": "Signed in as {{ first_name }}",
+      "log_out": "Sign Out",
+      "sign_in": "Sign In",
       "create_account": "Create an Account",
       "or": "or"
     },

@@ -1348,6 +1348,10 @@ form {
   margin-bottom: $gutter;
 }
 
+.form-actions {
+  text-align: left;
+}
+
 button,
 input[type="text"],
 input[type="search"],
@@ -1437,21 +1441,21 @@ select {
     background-color: $disabledGrey;
     border-color: $disabledBorder;
   }
-  
+
   &::-webkit-input-placeholder {
   	color: $muted !important;
   }
 
   &:-moz-placeholder { /* Firefox 18- */
-  	color: $muted !important;  
+  	color: $muted !important;
   }
 
   &::-moz-placeholder {  /* Firefox 19+ */
-  	color: $muted !important;  
+  	color: $muted !important;
   }
 
-  &:-ms-input-placeholder {  
-  	color: $muted !important;  
+  &:-ms-input-placeholder {
+  	color: $muted !important;
   }
 }
 
@@ -1633,6 +1637,13 @@ label.error {
 
 .form-spacer {
   margin: 0 $gutter/2;
+}
+
+.input-hint {
+	text-align: right;
+	margin-top: -$gutter/2;
+	font-size: 12px;
+	margin-bottom: $gutter/1.5;
 }
 
 /*============================================================================
@@ -2269,7 +2280,7 @@ $shareBorderColor: #ececec;
 
     input[type="text"],
     input[type="search"] {
-      
+
       &:focus {
         outline: 0;
       }
@@ -2764,7 +2775,7 @@ a.product-grid-item,
   sup {
     display: none;
   }
-  
+
   .was-before {
   	text-decoration: line-through;
   }

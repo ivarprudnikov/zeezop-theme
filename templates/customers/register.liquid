@@ -19,10 +19,9 @@
 
       <label for="password" class="hidden-label">{{ 'customer.register.password' | t }}</label>
       <input type="password" value="" name="customer[password]" id="create_password" placeholder="{{ 'customer.register.password' | t }}" {% if form.errors contains "password" %} class="error"{% endif %}>
-      <p>
-        <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn">
+      <p class="form-actions">
+        <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn btn--full">
       </p>
-      {{ 'customer.register.or' | t }} <a href="{{ shop.url }}">{{ 'customer.register.cancel' | t }}</a>
 
     {% endform %}
 

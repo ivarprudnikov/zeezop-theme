@@ -278,18 +278,18 @@
 
       <div class="grid">
         <div class="grid-item{% unless shop.enabled_payment_types == empty %} large--one-half{% endunless %}">
-          
+
           <ul class="legal-links inline-list">
             <li>
               &copy; {{ 'now' | date: "%Y" }} {{ shop.name }}
             </li>
-            
+
             {% if settings.footer_legallinks_enable %}
               {% for link in linklists[settings.footer_legallinks_linklist].links %}
               	<li><a href="{{ link.url }}">{{ link.title }}</a></li>
               {% endfor %}
             {% endif %}
-            
+
           </ul>
         </div>
 
