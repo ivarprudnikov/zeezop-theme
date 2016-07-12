@@ -140,10 +140,12 @@
       </a>
     </div>
   </div>
-  
+
   {% if settings.show_free_shipping %}
   <div class="free-delivery">
-    {{ settings.free_shipping_text }}
+    <a href="{{ settings.free_shipping_link }}">
+      {{ settings.free_shipping_text }}
+    </a>
   </div>
   {% endif %}
 

@@ -28,6 +28,7 @@
     "favicon_enable": true,
     "header_message": "",
     "show_free_shipping": true,
+    "free_shipping_link": "/pages/free-shipping",
     "free_shipping_text": "Free delivery on orders above €20",
     "footer_quicklinks_enable": false,
     "footer_quicklinks_linklist": "footer",

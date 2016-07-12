@@ -773,6 +773,11 @@
         "type": "text",
         "id": "free_shipping_text",
         "label": "Free shipping message"
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_link",
+        "label": "Free shipping link to page"
       }
     ]
   },
