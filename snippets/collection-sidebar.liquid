@@ -16,7 +16,7 @@
               Loop through collection tags
             {% endcomment %}
             {% for tag in collection.all_tags %}
-              {% assign cat = tag | split: '_' | first %}              
+              {% assign cat = tag | split: '_' | first %}
               {% if cat != tag and cat_item == cat %}
                 {% comment %}
                   Strip out tag category prefix and add/remove link for tag filtering
@@ -40,7 +40,7 @@
         elGroup,
         elHandle,
         activeTagInGroup;
-        
+
       filters.on('click', function(e) {
         el = $(this);
         elGroup = el.data('group');
@@ -60,7 +60,7 @@
 {% else %}
 
   {% if template contains 'collection' and collection.all_tags.size > 0 %}
-	
+
 	<h3>{{ 'collections.sidebar.tags' | t }}</h3>
 
     {% comment %}
@@ -126,7 +126,7 @@
               </span>
             </li>
           {% else %}
-            <li>{{ tag | link_to_tag: tag }}</li>
+            <li>{{ tag | link_to_add_tag: tag }}</li>
           {% endif %}
         {% endif %}
 
