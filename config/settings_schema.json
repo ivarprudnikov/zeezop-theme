@@ -789,29 +789,23 @@
         "content": "Footer menu"
       },
       {
-        "type": "checkbox",
-        "id": "footer_quicklinks_enable",
-        "label": "Show footer menu"
+        "type": "link_list",
+        "id": "footer_quicklinks_linklist_1",
+        "label": "Footer menu link list 01"
       },
       {
         "type": "link_list",
-        "id": "footer_quicklinks_linklist",
-        "label": "Footer menu link list"
+        "id": "footer_quicklinks_linklist_2",
+        "label": "Footer menu link list 02"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_quicklinks_linklist_3",
+        "label": "Footer menu link list 03"
       },
       {
         "type": "header",
-        "content": "Contact information"
-      },
-      {
-        "type": "checkbox",
-        "id": "footer_content_enable",
-        "label": "Show footer contact info"
-      },
-      {
-        "type": "textarea",
-        "id": "footer_content_text",
-        "label": "Contact text",
-        "info": "Use basic HTML to format text"
+        "content": "Social info"
       },
       {
         "type": "checkbox",
@@ -871,31 +865,6 @@
         "id": "social_fancy_link",
         "label": "Fancy",
         "info": "http:\/\/fancy.com\/shopify"
-      },
-      {
-        "type": "header",
-        "content": "Newsletter"
-      },
-      {
-        "type": "checkbox",
-        "id": "footer_newsletter_enable",
-        "label": "Show newsletter sign-up"
-      },
-      {
-        "type": "text",
-        "id": "mailing_list_form_action",
-        "label": "MailChimp form action URL",
-        "info": "[Find your MailChimp form action URL](https:\/\/docs.shopify.com\/manual\/configuration\/store-customization\/communicating-with-customers\/accounts-and-newsletters\/get-a-mailchimp-form-action-url\/)."
-      },
-      {
-        "type": "checkbox",
-        "id": "footer_legallinks_enable",
-        "label": "Show legal links in bottom bar"
-      },
-      {
-        "type": "link_list",
-        "id": "footer_legallinks_linklist",
-        "label": "Legal link list"
       }
     ]
   },
@@ -1375,6 +1344,7 @@
             "label": "By group"
           }
         ],
+
         "info": "[Learn how to set up filter groups](https:\/\/\/docs.shopify.com\/manual\/more\/official-shopify-themes\/supply#enable-group-filtering)."
       }
     ]

@@ -1737,6 +1737,12 @@ label.error {
   cursor: default;
   margin: 0;
 
+  text-align: center;
+
+  @include at-query ($min, $medium) {
+		text-align: right;
+	}
+
   li {
     margin: 0 $gutter/4 $gutter/4;
     color: {{ settings.color_footer_social_link }};
@@ -2601,6 +2607,8 @@ $shareBorderColor: #ececec;
   background-color: $colorFooterBg;
   padding: $gutter 0 $gutter*2/3;
   color: $colorFooterText;
+  font-size: 12px;
+  text-transform: uppercase;
 
   @include at-query ($min, $large) {
     padding: $gutter*2 0 $gutter;
@@ -2611,19 +2619,6 @@ $shareBorderColor: #ececec;
   }
 }
 
-.legal-links {
-  margin-bottom: 0;
-
-  & + & {
-    margin-bottom: $gutter/2;
-  }
-
-  li {
-    padding: 0 $gutter/2 0 0;
-    font-size: 13px;
-    line-height: 30px;
-  }
-}
 
 /*============================================================================
   #Product Grid and List Views

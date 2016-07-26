@@ -275,13 +275,8 @@
     "footer": {
       "theme_settings": "Theme Settings",
       "instructions_for_linklist_html": "Pick a link list to show here in your {{ theme_settings_link }} under {{ theme_settings_footer_linklist_path }}.",
-      "instructions_for_text_content_html": "Add some text to show here in your {{ theme_settings_link }}.",
       "quick_links": "Quick Links",
-      "get_in_touch": "Get In Touch",
-      "store_on_social_network": "{{ store_name }} on {{ social_network }}",
-      "newsletter_title": "Newsletter",
-      "newsletter_sign_up": "Sign Up",
-      "newsletter_email_placeholder": "Email Address"
+      "store_on_social_network": "{{ store_name }} on {{ social_network }}"
     }
   },
   "products": {
